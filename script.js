@@ -208,13 +208,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Open Login
-$(".open-login").on("click", function () {
-  $(".login-modal").addClass("active");
-});
+// $(".open-login").on("click", function () {
+//   $(".login-modal").addClass("active");
+// });
 
-$(".close-login").on("click", function () {
-  $(".login-modal").removeClass("active");
-});
+// $(".close-login").on("click", function () {
+//   $(".login-modal").removeClass("active");
+// });
 
 // Password Validation
 // document.addEventListener("DOMContentLoaded", function () {
