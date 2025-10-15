@@ -217,36 +217,36 @@ $(".close-login").on("click", function () {
 });
 
 // Password Validation
-document.addEventListener("DOMContentLoaded", function () {
-  const submitPasswordBtn = document.getElementById("submit-password");
-  const passwordInput = document.getElementById("password-input");
-  const errorMessage = document.querySelector(".login-error-message");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const submitPasswordBtn = document.getElementById("submit-password");
+//   const passwordInput = document.getElementById("password-input");
+//   const errorMessage = document.querySelector(".login-error-message");
 
-  // Define the correct password
-  const correctPassword = "inmadeira2026"; // Replace this with your actual password
-  const membersPageURL = "/members"; // Replace with your members-only page URL
+//   // Define the correct password
+//   const correctPassword = "inmadeira2026"; // Replace this with your actual password
+//   const membersPageURL = "/members"; // Replace with your members-only page URL
 
-  // Function to check the password and redirect if correct
-  function checkPassword() {
-    const enteredPassword = passwordInput.value;
+//   // Function to check the password and redirect if correct
+//   function checkPassword() {
+//     const enteredPassword = passwordInput.value;
 
-    if (enteredPassword === correctPassword) {
-      // Password is correct, redirect to the members-only page
-      window.location.href = membersPageURL;
-    } else {
-      // Password is incorrect, show an alert
-      alert("Incorrect password. Please try again."); // Display the alert message
-    }
-  }
+//     if (enteredPassword === correctPassword) {
+//       // Password is correct, redirect to the members-only page
+//       window.location.href = membersPageURL;
+//     } else {
+//       // Password is incorrect, show an alert
+//       alert("Incorrect password. Please try again."); // Display the alert message
+//     }
+//   }
 
-  // Event listener for the submit button (div)
-  submitPasswordBtn.addEventListener("click", checkPassword);
+//   // Event listener for the submit button (div)
+//   submitPasswordBtn.addEventListener("click", checkPassword);
 
-  // Prevent the form submission and handle 'Enter' key press
-  passwordInput.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-      e.preventDefault(); // Prevent the default form submission behavior
-      checkPassword(); // Call the checkPassword function when 'Enter' is pressed
-    }
-  });
-});
+//   // Prevent the form submission and handle 'Enter' key press
+//   passwordInput.addEventListener("keydown", function (e) {
+//     if (e.key === "Enter") {
+//       e.preventDefault(); // Prevent the default form submission behavior
+//       checkPassword(); // Call the checkPassword function when 'Enter' is pressed
+//     }
+//   });
+// });
